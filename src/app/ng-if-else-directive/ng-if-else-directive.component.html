@@ -1,0 +1,7 @@
+<p>ng-if-else-directive works!</p>
+<button (click)="toggle = !toggle" >Toggle</button>
+
+<p *ngIf="toggle; else blueP" class="red">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, esse?</p>
+<ng-template #blueP >
+  <p *ngIf="!toggle" class="blue">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, sit.</p>
+</ng-template>

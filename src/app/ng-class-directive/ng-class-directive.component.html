@@ -1,0 +1,11 @@
+<p>ng-class-directive works!</p>
+<button (click)="backgroundToggle = !backgroundToggle" >Toggle</button>
+<p [ngClass]="{
+red: backgroundToggle === true,
+blue : !backgroundToggle
+}
+">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, perspiciatis!</p>
+
+<p [class.blue]="!backgroundToggle"
+ [class.red]="backgroundToggle"
+>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, repellendus.</p>

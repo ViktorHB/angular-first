@@ -1,0 +1,29 @@
+<p>binding works!</p>
+<h4>two way data binding</h4>
+<input type="text" [value]="twoWay" (input)="onInputTwoWay($event)" >
+<p><b>{{twoWay}}</b></p>
+<h4> Forms module</h4>
+<h5>two way binding . need to import FormsModule in app.module.ts</h5>
+<input type="text" [(ngModel)]="twoWay"  >
+<p><b>{{twoWay}}</b></p>
+<hr>
+<button (click)="onClick()">Click me</button>
+<hr>
+<h4>one way data binding</h4>
+<input
+  type="text"
+  (keyup.enter)="onInput($event)"
+  (blur)="onBlur(myImput.value)"
+  #myImput>
+<p><strong>{{inputValue}}</strong></p>
+<hr>
+<img [src]="img" alt="">
+<hr>
+
+<p>{{title}}</p>
+<p><strong>{{number -3}}</strong></p>
+<p><strong>{{arr}}</strong></p>
+<p><strong>{{obj.b.c}}</strong></p>
+<p><strong>{{40+65}}</strong></p>
+<p><strong>{{'hello world'}}</strong></p>
+<hr>

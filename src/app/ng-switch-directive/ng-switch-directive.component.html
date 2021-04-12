@@ -1,0 +1,8 @@
+<p>ng-switch-directive works!</p>
+<button (click)="toggle = !toggle" >Toggle</button>
+<button (click)="toggle = 1111">Set 1111</button>
+<div [ngSwitch]="toggle">
+  <p *ngSwitchCase="true" class="red" >Lorem ipsum.</p>
+  <p *ngSwitchCase="false" class="blue">Lorem ipsum. Lorem ipsum.</p>
+  <p *ngSwitchDefault>Lorem ipsum dolor sit amet.</p>
+</div>
